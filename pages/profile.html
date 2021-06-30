@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css" />
+    <link rel="stylesheet" href="./../asset/css/profile.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <!-- Navigtaion -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow">
+        <section class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./../asset/img/logo-blanja.svg" alt="Logo Blanja"">
+                <span>Blanja</span>
+              </a>
+              <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="search-field">
+                        <input class="search-input" type="search" placeholder="Search" aria-label="Search">
+                        <a href=""><img src="./../asset/img/search.svg" class="icon-search"></a>
+                    </form>
+                    <button data-bs-toggle="modal" data-bs-target="#filter-product" class="btn-filter"><img
+                            src="./../asset/img/filter.svg" class="filter" alt=""></button>
+                    <a href="" class="btn-cart"><img src="./../asset/img/shopping-cart.svg" alt=""></a>
+                    <section class="header-right">
+                        <a href="" class="btn-notification"><img src="./../asset/img/mybag/icon-notification.png"
+                                alt=""></a>
+                        <a href="" class="btn-mail"><img src="./../asset/img/mybag/icon-mail.png" alt=""></a>
+                        <a href="" class="btn-profile"><img src="./../asset/img/mybag/icon-profile.png" alt=""></a>
+                    </section>
+                </section>
+        </section>
+    </nav>
+    <!-- navigation end -->
+
+    <!-- modal filter -->
+    <div class="modal fade" id="filter-product" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" data-bs-dismiss="modal"><img src="./../asset/img/home/filter/close-icon.png"
+                            alt=""></button>
+                    <h5 class="modal-title" id="staticBackdropLabel">Filter</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="filter-colors">
+                        <p class="filter-title">Colors</p>
+                        <div class="category flex-wrap">
+                            <input type="checkbox" class="btn-check" id="color1" autocomplete="off">
+                            <label for="color1" class="btn-black choice-color"></label>
+                            <input type="checkbox" class="btn-check" id="color2" autocomplete="off">
+                            <label for="color2" class="btn-white choice-color"></label>
+                            <input type="checkbox" class="btn-check" id="color3" autocomplete="off">
+                            <label for="color3" class="btn-red choice-color"></label>
+                            <input type="checkbox" class="btn-check" id="color4" autocomplete="off">
+                            <label for="color4" class="btn-grey choice-color"></label>
+                            <input type="checkbox" class="btn-check" id="color5" autocomplete="off">
+                            <label for="color5" class="btn-brown choice-color"></label>
+                            <input type="checkbox" class="btn-check" id="color6" autocomplete="off">
+                            <label for="color6" class="btn-blue choice-color"></label>
+                        </div>
+                    </div>
+                    <hr class="divider-filter">
+                    <div class="filter-size">
+                        <p class="filter-title">Size</p>
+                        <div class="category flex-wrap">
+                            <input type="checkbox" class="btn-check" id="size-xs" autocomplete="off">
+                            <label for="size-xs" class="choice-size">XS</label>
+                            <input type="checkbox" class="btn-check" id="size-s" autocomplete="off">
+                            <label for="size-s" class="choice-size">S</label>
+                            <input type="checkbox" class="btn-check" id="size-m" autocomplete="off">
+                            <label for="size-m" class="choice-size">M</label>
+                            <input type="checkbox" class="btn-check" id="size-l" autocomplete="off">
+                            <label for="size-l" class="choice-size">L</label>
+                            <input type="checkbox" class="btn-check" id="size-xl" autocomplete="off">
+                            <label for="size-xl" class="choice-size">XL</label>
+                        </div>
+                    </div>
+                    <hr class="divider-filter">
+                    <div class="filter-gender">
+                        <p class="filter-title">Category</p>
+                        <div class="category flex-wrap">
+                            <input type="checkbox" class="btn-check" id="all" autocomplete="off">
+                            <label for="all" class="choice-category">All</label>
+                            <input type="checkbox" class="btn-check" id="women" autocomplete="off">
+                            <label for="women" class="choice-category">Women</label>
+                            <input type="checkbox" class="btn-check" id="man" autocomplete="off">
+                            <label for="man" class="choice-category">Man</label>
+                            <input type="checkbox" class="btn-check" id="boys" autocomplete="off">
+                            <label for="boys" class="choice-category">Boys</label>
+                            <input type="checkbox" class="btn-check" id="girls" autocomplete="off">
+                            <label for="girls" class="choice-category">Girls</label>
+                        </div>
+                    </div>
+                    <hr class="divider-filter">
+                    <div class="filter-brand">
+                        <div class="select-brand">
+                            <p class="filter-title">Brand</p>
+                            <select name="brand" id="brand" class="form-select">
+                                <option value="adidas">adidas Originals, Jack & Jones, s.Oliver</option>
+                                <option value="adidas">adidas Originals, Jack & Jones, s.Oliver</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr class="divider-filter">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal filter end -->
+
+    <main class="profile">
+        <section class="list-profile">
+            <main class="data">
+                <section class="the-profile">
+                    <section class="img-profile">
+                        <img src="./../asset/img/profile/profil-60px.png" alt="">
+                    </section>
+                    <section class="item-profile">
+                        <p class="name">Johanes Mikael</p>
+                        <section class="edit-profile">
+                            <img src="./../asset/img/profile/edit.png" alt="">
+                            <p>Ubah profile</p>
+                        </section>
+                    </section>
+                </section>
+                <section class="data-profiles">
+                    <section class="data-items">
+                        <img src="./../asset/img/profile/user.png" class="icon-user" alt="">
+                        <p>My Account</p>
+                    </section>
+                    <section class="data-items">
+                        <img src="./../asset/img/profile/map.png" class="icon-maps" alt="">
+                        <p>Shipping Address</p>
+                    </section>
+                    <section class="data-items">
+                        <img src="./../asset/img/profile/order.png" class="icon-order" alt="">
+                        <p>My Order</p>
+                    </section>
+                </section>
+            </main>
+        </section>
+        <section class="data-profile">
+            <main class="data">
+
+                <section class="descriptions">
+                    <section class="descriptions-title">
+                        <h4>My Profile</h4>
+                        <p>Manage your profile information</p>
+                    </section>
+                    <hr>
+                    <section class="informations">
+                        <section class="descriptions-item">
+                            <p>Name</p>
+                            <input type="text">
+                        </section>
+                        <section class="descriptions-item">
+                            <p>Email</p>
+                            <input type="text">
+                        </section>
+                        <section class="descriptions-item">
+                            <p>Phone Number</p>
+                            <input type="number">
+                        </section>
+                        <section class="descriptions-item">
+                            <p>Gender</p>
+                            <form>
+                                <input type="radio" class="pick-gender" id="laki-laki" name="gender" value="laki-laki">
+                                <label for="laki-laki">Laki-laki</label>
+                                <input type="radio" class="pick-gender" id="perempuan" name="gender" value="perempuan">
+                                <label for="laki-laki">Perempuan</label>
+                            </form>
+                        </section>
+                        <section class="descriptions-item">
+                            <p>Date of birth</p>
+                            <main class="date-of-birth">
+                                <section class="custom-select">
+                                    <select>
+                                        <option value="0">Tanggal</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                    </select>
+                                </section>
+                                <section class="custom-select">
+                                    <select>
+                                        <option value="0">Bulan</option>
+                                        <option value="1">January</option>
+                                        <option value="2">Februari</option>
+                                        <option value="3">April</option>
+                                        <option value="4">Mei</option>
+                                        <option value="5">Juni</option>
+                                        <option value="6">Juli</option>
+                                        <option value="7">Agustus</option>
+                                    </select>
+                                </section>
+                                <section class="custom-select">
+                                    <select>
+                                        <option value="0">Tahun</option>
+                                        <option value="1">2001</option>
+                                        <option value="2">2002</option>
+                                        <option value="3">2003</option>
+                                        <option value="4">2004</option>
+                                        <option value="5">2005</option>
+                                        <option value="6">2006</option>
+                                        <option value="7">2007</option>
+                                    </select>
+                                </section>
+                            </main>
+                            
+                        </section>
+                    </section>
+                    <section class="avatar">
+                        <section class="change-avatar">
+                            <img src="./../asset/img/profile/avatar.png" alt="">
+                            <button class="btn-change-avatar">Change Avatar</button>
+                        </section>
+                    </section>
+                </section>
+            </main>
+        </section>
+    </main>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

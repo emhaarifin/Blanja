@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css" />
+    <link rel="stylesheet" href="./asset/css/index.css">
+    <title>My Bag</title>
+    <link rel="stylesheet" href="./../asset/css/mybag.css">
+</head>
+
+<body>
+    <!-- Navigtaion -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow">
+        <section class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./../asset/img/logo-blanja.svg" alt="Logo Blanja"">
+                <span>Blanja</span>
+              </a>
+              <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="search-field">
+                        <input class="search-input" type="search" placeholder="Search" aria-label="Search">
+                        <a href=""><img src="./../asset/img/search.svg" class="icon-search"></a>
+                    </form>
+                    <button data-bs-toggle="modal" data-bs-target="#filter-product" class="btn-filter"><img
+                            src="./../asset/img/filter.svg" class="filter" alt=""></button>
+                    <a href="" class="btn-cart"><img src="./../asset/img/shopping-cart.svg" alt=""></a>
+                    <section class="header-right">
+                        <a href="" class="btn-notification"><img src="./../asset/img/mybag/icon-notification.png"
+                                alt=""></a>
+                        <a href="" class="btn-mail"><img src="./../asset/img/mybag/icon-mail.png" alt=""></a>
+                        <a href="" class="btn-profile"><img src="./../asset/img/mybag/icon-profile.png" alt=""></a>
+                    </section>
+                </section>
+        </section>
+    </nav>
+
+    <!-- My Bag -->
+
+    <!-- <main class="my-bag"> -->
+    <section class="container">
+        <section class="row">
+
+            <section class="col-8">
+                <main class="my-bag-select">
+                    <p class="title">My Bag</p>
+                    <section class="checklist-all-item">
+                        <input type="checkbox" name="" id="select-item">
+                        <p class="subtitle">Select all items <span>(2 items selected)</span></p>
+                        <!-- <p class="sum-selected">(2 items selected)</p> -->
+                        <p class="delete">Delete</p>
+                    </section>
+                    <section class="the-item">
+                        <section class="item">
+                            <input type="checkbox">
+                            <section class="img-item-select">
+                                <img src="./../asset/img/mybag/jas.png"
+                                    alt="">
+                            </section>
+                            <section class="what-item">
+                                <p class="name-item">Men's formal suit - Black </p>
+                                <p class="seller-item">Zalora cloth</p>
+                            </section>
+                            <section class="sum-item">
+                                <img src="./../asset/img/mybag/min.png" alt="" class="min">
+                                <p>1</p>
+                                <img src="./../asset/img/mybag/add.png" alt="" class="add">
+                                <p class="price-item">$ 20.00</p>
+                            </section>
+                        </section>
+                        <section class="item">
+                            <input type="checkbox">
+                            <section class="img-item-select">
+                                <img src="./../asset/img/mybag/jacket.png"
+                                    alt="">
+                            </section>
+                            <section class="what-item">
+                                <p class="name-item">Men's formal suit - Black </p>
+                                <p class="seller-item">Zalora cloth</p>
+                            </section>
+                            <section class="sum-item">
+                                <img src="./../asset/img/mybag/min.png" alt="" class="min">
+                                <p>1</p>
+                                <img src="./../asset/img/mybag/add.png" alt="" class="add">
+                                <p class="price-item">$ 20.00</p>
+                            </section>
+                        </section>
+                    </section>
+                </main>
+            </section>
+
+
+            <section class="col-4">
+                <main class="shopping-summary">
+                    <p>Shopping summary</p>
+                    <section class="price">
+                        <p id="title-price">Total Price</p>
+                        <p id="price">$ 40.00</p>
+                    </section>
+                    <a href="./checkout.html" type="button" class="btn__buy">Buy</a>
+                </main>
+            </section>
+        </section>
+    </section>
+    <!-- </main> -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
