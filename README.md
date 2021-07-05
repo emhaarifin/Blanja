@@ -1,6 +1,6 @@
 # Blanja
 ## **Contents**
-[Description](Description.md)
+[Description](blanja/description)
 Requirements
 Instalation
 <!-- Screenshot -->
