@@ -9,7 +9,7 @@
 ## Desciption
 
 
-This is my slicing project which includes HTML, CSS, and Bootstrap. I feel happy because with this project I can improve my skills.
+This is my frist time slicing project which includes HTML, CSS, and Bootstrap. I feel happy because with this project I can improve my skills.
 
 ## Requirements
 
