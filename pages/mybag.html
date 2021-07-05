@@ -67,22 +67,28 @@
     <!-- My Bag -->
 
     <main class="my-bag">
-            <section class="container">
+        <section class="container">
             <section class="row">
                 <section class="col-8">
-                    <main class="my-bag-select">
+                    <section class="my-bag-select">
                         <p class="title">My Bag</p>
                         <section class="checklist-all-item">
-                            <input type="checkbox"  class="checkmark" id="select-item">
-                            <!-- <label for="select-item" class="checked-red"></label> -->
+                            <label class="checker">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
                             <p class="subtitle">Select all items <span>(2 items selected)</span></p>
                             <p class="delete">Delete</p>
+                            <!-- <input type="checkbox"  class="checkmark" id="select-item"> -->
+                            <!-- <label for="select-item" class="checked-red"></label> -->
                         </section>
                         <section class="the-item">
                             <section class="item">
                                 <div class="d-flex align-items-center">
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
+                                    <label class="checker">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
                                     <div class="d-flex ms-2 md-2 align-items-center">
                                         <img src="./../asset/img/mybag/jas.png" alt="">
                                         <section>
@@ -102,8 +108,10 @@
                             </section>
                             <section class="item">
                                 <div class="d-flex align-items-center">
-                                    <input type="checkbox" class="checkmark">
-                                    <span class="checkmark"></span>
+                                    <label class="checker">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
                                     <div class="d-flex ms-2 md-2 align-items-center">
                                         <img src="./../asset/img/mybag/jas.png" alt="">
                                         <section>
@@ -122,7 +130,7 @@
                                 </section>
                             </section>
                         </section>
-                    </main>
+                    </section>
                 </section>
                 <section class="col-4">
                     <main class="shopping-summary">
