@@ -552,14 +552,6 @@ a.btn-primary:hover {
     margin-top: 50px;
 } */
 
-.col-2 {
-    /* width: fit-content; */
-    background-color: royalblue;
-}
-
-.col-3 {
-    background-color: saddlebrown;
-}
 
 .num-review {
     font-weight: 500;
@@ -578,7 +570,6 @@ a.btn-primary:hover {
 
 .rating-product-review img {
     list-style: none;
-    /* margin: 0 2px; */
     width: 24px;
     height: 24px;
 }
@@ -647,7 +638,7 @@ a.btn-primary:hover {
 .container .product-card{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.7%;
+    gap: 1.0%;
 }
 
  .heading {
